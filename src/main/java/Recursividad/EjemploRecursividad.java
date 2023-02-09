@@ -9,7 +9,7 @@ package Recursividad;
  *
  * @author david
  */
-public class Fibonaci {
+public class EjemploRecursividad {
 
     public static int factorial(int num){
         
