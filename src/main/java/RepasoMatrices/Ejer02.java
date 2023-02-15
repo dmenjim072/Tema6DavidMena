@@ -46,7 +46,7 @@ public class Ejer02 {
         if(coordenadas != null){
             
             //Mostramos las coordenadas de la posicion pedida
-            System.out.println("La posicion pedida se encuentra en las coordenadas " + coordenadas[0] + "y " + coordenadas[1]);
+            System.out.println("La posicion pedida se encuentra en las coordenadas " + coordenadas[0] + "," + coordenadas[1]);
             
         }else{
             
@@ -62,11 +62,11 @@ public class Ejer02 {
         //Declaramos un array para la coordenada
         int [] coordenada = new int[2];
         
-        for (int i = 0; i < auxMatriz.length -1; i++) {
-            for (int j = 0; j < auxMatriz.length -1; j++) {
+        for (int i = 1; i < auxMatriz.length -1; i++) {
+            for (int j = 1; j < auxMatriz[i].length -1; j++) {
                 
                 //Si la posicion de la matriz es 0 y las esquinas son 1
-                if(auxMatriz[i][j]==0 && auxMatriz[i-1][j-1]==1 && auxMatriz[i+1][j-1]==1 && auxMatriz[i-1][j+1]==1 && auxMatriz[i+1][j+1]==1){
+                if(auxMatriz[i][j] == 0 && auxMatriz[i - 1][j - 1] == 1 && auxMatriz[i - 1][j + 1] == 1 && auxMatriz[i + 1][j - 1] == 1 && auxMatriz[i + 1][j + 1] == 1){
                     
                     //A la posicion 0 y 1 de coordenada le asignamos los valores de i y j
                     coordenada[0] = i;
